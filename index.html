@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="css/temp.css">
+	<!-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myCss.css">
+	<script type="text/javascript" src="javascript/jQuery.js"></script>
+</head>
+<body>
+	<nav class="clearfix" id="navbar">
+		<div class="sm-col py2"> 
+			<div class="relative inline-block" data-disclosure>
+				<button type="button" class="myBtn btn-primary" id="dropDownButton">Browse Category <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+				<div data-details class="absolute left-0 nowrap white bg-blue rounded" id="dropDown" style="display: none">
+					<a href="#" class="myBtn block">Sample 1</a>
+					<a href="#" class="myBtn block">Sample 2</a>
+					<a href="#" class="myBtn block">Sample 3</a>
+					<a href="#" class="myBtn block">Sample 4</a>
+					<a href="#" class="myBtn block">Sample 5</a>
+					<a href="#" class="myBtn block">Sample 6</a>
+				</div>
+			</div>
+		</div>
+	  	<div class="sm-col py2">
+	    	<span style="position: relative; left: 20px; top: 8px;"><input type="text" class="mySearchBox" name="searchBox" placeholder="Search"><i class="mySearchIcon fa fa-search" aria-hidden="true"></i></span>
+	  	</div>
+	  	<div class="sm-col py2 readBooks">
+	  		<span>read<strong>books</strong></span>
+	  	</div>
+	  	<div class="sm-col py2 profileStatus">
+	  		<span><img class="profilePic" src="http://lorempixel.com/50/50" alt=""></span>
+	  	</div>
+	  	<div class="sm-col py2">
+	  		<span><i class="fa fa-bars menuBar" aria-hidden="true"></i></span>
+	  	</div>
+	</nav>
+	<div class="books">
+		<div class="accIcon">
+				<span class="left arrow" id="left">
+					<span class="matter" style="margin-left: 23px;margin-top: 10px;"><i class="fa fa-arrow-left gl" aria-hidden="true"></i></span>
+				</span>
+				<span class="right arrow" id="right">
+					<span class="matter" style="margin-left: 23px;margin-top: 10px;"><i class="fa fa-arrow-right gl" aria-hidden="true"></i></span>
+				</span>
+				<div class="image_bar" style="background-color: yellow;">
+					<img class="book_img_bar" src="images/book1.jpg" width="45%">
+				</div>
+				<div class="image_bar" style="background-color: tomato;">
+					<img class="book_img_bar" src="images/book2.jpg" width="45%">
+				</div>
+				<div class="image_bar" style="background-color: violet;">
+					<img class="book_img_bar" src="images/book3.jpg" width="45%">
+				</div>	
+				<div class="image_bar" style="background-color: violet;">
+					<img class="book_img_bar" src="images/book3.jpg" width="45%">
+				</div>	
+				<div class="image_bar" style="background-color: violet;">
+					<img class="book_img_bar" src="images/book3.jpg" width="45%">
+				</div>				
+		</div>
+	</div>
+	<div class="authorBooks">
+		<div class="author">
+			Author of the week
+			<ul class="authorList">
+				<li><img class="iconRound" src="http://lorempixel.com/60/60" alt=""><span class="listData">Sebestian Jeremy</span></li>
+				<li><img class="iconRound" src="http://lorempixel.com/60/60" alt=""><span class="listData">Jonathan Doe</span></li>
+				<li><img class="iconRound" src="http://lorempixel.com/60/60" alt=""><span class="listData">Angeline Summer</span></li>
+				<li><img class="iconRound" src="http://lorempixel.com/60/60" alt=""><span class="listData">Noah Jones</span></li>
+				<li><img class="iconRound" src="http://lorempixel.com/60/60" alt=""><span class="listData">Tommy Adam</span></li>
+				<li><img class="iconRound" src="http://lorempixel.com/60/60" alt=""><span class="listData">Iam Cassandra</span></li>
+			</ul>
+		</div>
+		<div class="books">
+			<div class="books">
+				Books of the year
+				<ul class="bookList">
+					<li><img class="iconSquare" src="http://lorempixel.com/60/60" alt=""><span class="listDataSquare">Book 1</span></li>
+					<li><img class="iconSquare" src="http://lorempixel.com/60/60" alt=""><span class="listDataSquare">Book 2</span></li>
+					<li><img class="iconSquare" src="http://lorempixel.com/60/60" alt=""><span class="listDataSquare">Book 3</span></li>
+					<li><img class="iconSquare" src="http://lorempixel.com/60/60" alt=""><span class="listDataSquare">Book 4</span></li>
+					<li><img class="iconSquare" src="http://lorempixel.com/60/60" alt=""><span class="listDataSquare">Book 5</span></li>
+					<li><img class="iconSquare" src="http://lorempixel.com/60/60" alt=""><span class="listDataSquare">Book 6</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="genre">
+		<div class="header_g">
+			<span style="display:inline-block;">Popular by Genre</span>
+			<ul class="types">
+				<li id="all" class="alb focused">All Genres</li>
+				<li id="business" class="alb">Business</li>
+				<li id="science" class="alb">Science</li>
+				<li id="fiction" class="alb">Fiction</li>
+				<li id="philosophy" class="alb">Philosophy</li>
+				<li id="biography" class="alb">Biography</li>
+			</ul>
+		</div>
+		<div id="matsec">
+			
+		</div>
+	</div>
+</body>
+<script src="javascript/myScript.js"></script>
+<script type="text/javascript" src="javascript/gallery.js"></script>
+<script type="text/javascript" src="javascript/jquery-ui.js"></script>
+</html>
